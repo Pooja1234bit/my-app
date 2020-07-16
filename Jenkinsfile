@@ -24,8 +24,8 @@ node {
    stage('Mvn Package'){
 	   // Build using maven
 	   
-	   //sh "${mvn} clean install"
-	   bat'mvn clean compile'
+	   sh "${mvn} clean install"
+	   //bat'mvn clean compile'
    }
    
    //stage('deploy-dev'){
